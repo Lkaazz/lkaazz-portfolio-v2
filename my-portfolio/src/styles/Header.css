@@ -1,0 +1,142 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 16px 20px;
+  font-family: "Pixelify Sans", sans-serif;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  border-bottom: 1px solid #333;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(to right, 
+    
+    #48cae4,
+    #00b4d8, 
+    #0096c7, 
+    #0077b6, 
+    #023e8a, 
+    #03045e  
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-animation 10s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes rainbow-animation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-end {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #00B150;
+}
+
+.site-header.visible {
+  transform: translateY(0);
+}
+
+.site-header.hidden {
+  transform: translateY(-100%);
+}
+
+body {
+  padding-top: 60px; 
+}
+
+.nav-link.active {
+  color: #00B150;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00B150;
+  animation: linkUnderline 0.3s ease forwards;
+}
+
+.nav-end #a1::before,.nav-end #a1::after,
+.nav-end #a2::before,.nav-end #a2::after,
+.nav-end #a3::before,.nav-end #a3::after,
+.nav-end #a4::before,.nav-end #a4::after {
+  position: absolute;
+  top: 40px;
+  transform: translateX(-110%);
+}
+
+.nav-end #a1:hover::before,
+.nav-end #a2:hover::before,
+.nav-end #a3:hover::before,
+.nav-end #a4:hover::before {
+  width: max-content;
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  content: attr(data-tooltip);
+  max-width: 100%;
+  border: 1px solid rgb(248, 240, 240);
+  box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes linkUnderline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+

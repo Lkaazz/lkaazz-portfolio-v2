@@ -1,0 +1,99 @@
+.site-footer {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 40px 20px;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-title {
+  font-size: 40px;
+  color: #00B150;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-links-left, .footer-links-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.footer-link {
+  color: #4169e1; 
+  text-decoration: none; 
+  font-size: 22px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  width: fit-content; 
+}
+
+.footer-link:hover {
+  color: #00bfff;
+  text-decoration: underline;
+  text-underline-offset: 4px; 
+  text-decoration-thickness: 2px; 
+  
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  border-top: 1px solid #333;
+}
+
+.credits {
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.rainbow-text {
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.rainbow-text:hover {
+  background-image: linear-gradient(to right, 
+    #48cae4, 
+    #00b4d8, 
+    #0096c7, 
+    #0077b6, 
+    #023e8a, 
+    #03045e  
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow-animation 2s ease-in-out infinite;
+}
+
+@keyframes rainbow-animation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+

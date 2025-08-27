@@ -1,0 +1,140 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  width: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 0 20px;
+  position: relative;
+  padding-top: 0; 
+
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.section-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 100%;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.welcome {
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.dots {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.dots::before {
+  content: " ";
+  display: inline-block;
+  width: 138px; 
+}
+
+.intro {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.name {
+  font-size: 91px;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+
+
+.highlight {
+  color: #00B150;
+  font-weight: normal;
+}
+
+.scroll-button {
+  margin-top: 40px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: #252525;
+  color: white;
+  font-size: 24px;
+  transition: 0.3s;
+  align-self: center;
+  font-weight: normal;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.8);
+  border: none;
+  letter-spacing: 1px;
+  position: relative;
+  top: 150px;
+  user-select:none;
+  cursor: pointer;
+}
+
+.scroll-button span {
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+
+.scroll-button:hover {
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+.scroll-text {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #89898A;
+  align-self: center;
+  text-align: right;
+  position: relative;
+  top: 78px;
+  right: 180px;
+}
+
+.slide-out {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.sobre-title, .role {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-end a:hover {
+  color: #0096c7;
+  transition: color 0.7s ease;
+}
+
+.papagaio {
+  position: absolute;  
+  bottom: -30px;
+  right: 200px;
+  color: #9a9a9a;
+  font-size: 20px;
+}

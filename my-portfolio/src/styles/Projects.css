@@ -1,0 +1,162 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 80px 20px;
+}
+
+.section-content {
+  width: 100%;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.projects-title {
+  color: #00B150;
+  font-size: 76px;
+  margin-bottom: 40px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-image-container {
+  flex: 0 0 35%;
+  margin-right: 40px;
+  width: fit-content;
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  user-select: none;
+}
+
+.project-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: filter 0.3s ease, transform 0.3s ease, blur 0.3s ease;
+  transform: scale(1);
+}
+
+.project-image-container:hover {
+  filter: grayscale(50%) blur(1px);
+  transform: scale(1.0);
+}
+
+.image-scale {
+  animation: scaleAnimation 5s ease forwards;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.image-blur {
+  filter: grayscale(100%) blur(6px);
+  transition: filter 0.3s ease;
+}
+
+.project-details {
+  flex: 1 0 0%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 10px;
+}
+
+.project-title {
+  color: #00B150;
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-description {
+  font-size: 24px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.technology-tag {
+  background-color: #252525;
+  color: #5086EC;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 2px solid #5086EC;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.slide-out {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.project-link {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.github-link {
+  background-color: #252525;
+  color: #a7bfeb;
+  border: 2px solid #a7bfeb;
+  cursor: pointer;
+}
+
+.github-link:hover {
+  background-color: #1862ea3c;
+}
+
+.project-image-container:hover .image-scale {
+  animation-play-state: paused;
+}
+
+.project-image-container:hover .project-image {
+  transform: scale(1.0); 
+}

@@ -1,0 +1,319 @@
+@media (max-width: 700px) {
+
+  .home-container,
+  .sobre-container,
+  .projects-container,
+  .about-container,
+  .about-flex-container {
+    padding: 0 0px;
+  }
+
+  .about-flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    min-height: 250px;
+    max-height: fit-content;
+  }
+
+
+  .content {
+    width: fit-content;
+    height: min-content;
+    max-width: fit-content;
+    padding: 10%;
+  }
+
+  .name {
+    font-size: 70px;
+    max-width: fit-content;
+  }
+
+  .content .role {
+    font-size: 20px;
+  }
+
+  .profile-pic-container {
+    margin-right: 0;
+    margin-bottom: 0px;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-pic-container::after {
+    bottom: -25px;
+    font-size: 15px;
+    transform: translateX(0%);
+  }
+
+  .profile-pic {
+    max-width: 120px;
+  }
+
+  .role {
+    font-size: 15px;
+    max-width: fit-content;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 40px;
+  }
+
+  .about-title-2 {
+    font-size: 30px;
+  }
+
+  .header-container {
+    padding: 0 0px;
+  }
+
+  .logo {
+    position: relative;
+    align-items: center;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .projects-title {
+    font-size: 30px;
+  }
+
+  .project-title {
+    font-size: 28px;
+  }
+
+  .project-description {
+    font-size: 20px;
+  }
+
+  .habilidades-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .habilidades-categoria h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  .habilidades-categoria li {
+    font-size: 20px;
+    color: #89898A;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-link {
+    width: fit-content;
+  }
+
+  .scroll-indicator {
+    width: 20px;
+    height: 20px;
+  }
+
+  .scroll-indicator.active {
+    width: 70px;
+    height: 20px;
+  }
+
+  .scroll-indicator-2.active {
+    width: 70px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .project-image-container {
+    flex: none;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+
+  .project-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box; 
+    background-color: #252525;
+  }
+  
+  .image-scale {
+    transform-origin: center;
+  }
+
+  .project-details {
+    width: 100%;
+  }
+
+  .project-technologies {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-link {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 1%;
+  }
+
+  .sobre-title {
+    font-size: 50px;
+    padding-bottom: 50px;
+    right: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .project-image-container {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 28px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .project-description {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .site-footer {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 540px) {
+
+  .nav-links {
+    visibility: hidden;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 40px;
+  }
+
+  .role {
+    font-size: 18px;
+  }
+
+  .welcome,
+  .intro {
+    font-size: 20px;
+  }
+
+  .sobre-title {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+
+  .technology-tag {
+    font-size: 14px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .projects-title {
+    font-size: 40px;
+  }
+
+  .project-title {
+    font-size: 24px;
+  }
+
+  .project-description {
+    font-size: 18px;
+  }
+
+  .technology-tag {
+    font-size: 14px;
+  }
+
+  .habilidades-container {
+    gap: 9px;
+  }
+
+  .role {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1395px) {
+  .vertical-jp {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1100px) {
+  .papagaio {
+    visibility: hidden;
+  }
+
+  .scroll-text {
+    visibility: hidden;
+  }
+}
