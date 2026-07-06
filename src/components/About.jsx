@@ -57,6 +57,20 @@ function About() {
           ></div>
         </div>
         <div className="about-flex-container">
+          <div className="profile-pic-container">
+            <img
+              src={minhaFoto}
+              alt="Lucas Carvalho"
+              className="profile-pic"
+            />
+            {scrollIndex === 1 && (
+              <img
+                src={risco}
+                alt="Overlay"
+                className="profile-pic-overlay"
+              />
+            )}
+          </div>
           <div className="about-content">
             <div className="about-paragraphs">
               {aboutTexts[scrollIndex].paragraphs.map((paragraph, index) => (

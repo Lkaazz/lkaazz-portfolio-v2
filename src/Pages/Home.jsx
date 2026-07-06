@@ -1,9 +1,7 @@
 import "@fontsource/pixelify-sans";
-import { useRef } from "react";
 import "../styles/Home.css";
 
 function Home() {
-  const aboutSectionRef = useRef(null);
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
