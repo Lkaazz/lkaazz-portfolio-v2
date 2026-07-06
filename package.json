@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
+  "homepage": "https://lkaazz.github.io/lkaazz-portfolio-v2",
   "private": true,
   "dependencies": {
     "@fontsource/pixelify-sans": "^5.2.6",
