@@ -20,7 +20,7 @@ function Footer() {
         <div className="footer-bottom">
           <div className="credits">
             Desenvolvido por <br/>
-            Lucas Carvalho <span className="rainbow-text">(lkaaz)</span> .. 2026
+            Lucas Carvalho <span className="rainbow-text">(lkaazz)</span> .. 2025
           </div>
         </div>
       </div>

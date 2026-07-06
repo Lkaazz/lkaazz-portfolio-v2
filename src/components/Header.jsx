@@ -69,7 +69,7 @@ function Header() {
           e.preventDefault();
           scrollToSection('home');
         }}>
-          lkaaz
+          lkaazz
         </a>
         <nav className="nav-links">
           <a
