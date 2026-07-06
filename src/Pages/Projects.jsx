@@ -1,7 +1,4 @@
 import React, { useReducer, useEffect, useState, useRef } from 'react';
-import fr1 from '../assets/frufrutas/fr1.png';
-import fr2 from '../assets/frufrutas/fr2.png';
-import fr3 from '../assets/frufrutas/fr3.png';
 import cmb1 from '../assets/cmb/cmb1.png';
 import cmb2 from '../assets/cmb/cmb2.png';
 import cmb3 from '../assets/cmb/cmb3.png';
@@ -17,7 +14,6 @@ import '../styles/Projects.css';
 
 const projectImages = {
   robo: [robo1, robo2, robo3, robo4],
-  frufrutas: [fr1, fr2, fr3 ],
   cmb: [cmb1, cmb2, cmb3, cmb4],
   portfolio: [port1, port2, port3]
 };
@@ -46,26 +42,20 @@ function projectsReducer(state, action) {
 }
 
 const projects = [
+    {
+    title: 'Robótica e visão computacional (TCC)',
+    description: 'Robô autônomo com mobilidade automatizada por aprendizado de máquina e visão computacional, utilizando Yolo V8 e Asus Tinkboard.',
+    technologies: ['Python', 'YoloV8', 'Linux', 'Asus Tinkerboard', 'ML'],
+    imageKey: 'robo',
+    githubLink: 'https://github.com/Lkaazz/robotics-computervision',
+    publicationLink: 'https://ieeexplore.ieee.org/document/11249507'
+  },
   {
     title: 'CMB — Gestão de feedbacks',
     description: 'Sistema backend para armazenar feedbacks de passageiros de ônibus e gerenciar dados para apresentação gráfica da situação do transporte público.',
     technologies: ['Java', 'JavaFX', 'MySQL', 'My Maps API', 'UML'],
     imageKey: 'cmb',
     githubLink: 'https://github.com/Lkaazz/cmb',
-  },
-  {
-    title: 'Robótica e visão computacional (TCC)',
-    description: 'Robô autônomo com mobilidade automatizada por aprendizado de máquina e visão computacional, utilizando Yolo V8 e Asus Tinkboard.',
-    technologies: ['Python', 'YoloV8', 'Linux', 'Asus Tinkerboard', 'ML'],
-    imageKey: 'robo',
-    githubLink: 'https://github.com/Lkaazz/robotics-computervision',
-  },
-  {
-    title: 'Frufrutas',
-    description: 'Aplicação web focada em simular uma vendedora digital de frutas. Firebase utilizado para o armazenamento de dados das frutas.',
-    technologies: ['ReactJS', 'Node.js', 'Firebase', 'Express'],
-    imageKey: 'frufrutas',
-    githubLink: 'https://github.com/Lkaazz/frufrutas',
   },
   {
     title: 'Meu portfólio',
@@ -215,6 +205,20 @@ function Projects() {
                 >
                   <span className="link-icon">&#60;/&#62;&nbsp;&nbsp;</span>
                   Código
+                </a>
+              )}
+
+              {/* Novo Botão Condicional de Publicação */}
+              {currentProject.publicationLink && (
+                <a
+                  href={currentProject.publicationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link publication-link"
+                  style={{ marginLeft: '10px' }} // Espaçamento opcional entre botões se herdar o mesmo CSS inline
+                >
+                  <span className="link-icon">IEEE&nbsp;&nbsp;</span>
+                  Publicação
                 </a>
               )}
             </div>

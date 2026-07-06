@@ -20,11 +20,11 @@ function About() {
     {
       paragraphs: [
         "- moro no brasil",
-        "- tenho 21 anos",
+        "- 22 anos",
         "- produtivo em horários desfavoráveis",
         "- gosto de aprender coisas novas",
         "- viciado em games e animes",
-        "- perco a nação do tempo facilmente",
+        "- perco a noção do tempo facilmente",
       ]
     }
   ];

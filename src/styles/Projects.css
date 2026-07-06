@@ -142,14 +142,14 @@
   transition: all 0.3s ease;
 }
 
-.github-link {
+.github-link, .publication-link {
   background-color: #252525;
   color: #a7bfeb;
   border: 2px solid #a7bfeb;
   cursor: pointer;
 }
 
-.github-link:hover {
+.github-link:hover, .publication-link:hover {
   background-color: #1862ea3c;
 }
 
