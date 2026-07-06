@@ -77,6 +77,31 @@
   font-weight: normal;
 }
 
+.role {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.role-subtitle {
+  display: inline-block;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(to right, 
+    #9e29e2,
+    #990beb, 
+    #780bb8, 
+    #580886, 
+    #430766, 
+    #32044d  
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-animation 10s ease-in-out infinite;
+}
+
 .scroll-button {
   margin-top: 40px;
   padding: 20px 30px;

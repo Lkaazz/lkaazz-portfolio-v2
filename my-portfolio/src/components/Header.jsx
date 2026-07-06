@@ -20,14 +20,17 @@ function Header() {
       
       const homeSection = document.getElementById('home');
       const aboutSection = document.getElementById('about');
+      const experienceSection = document.getElementById('experience');
       const projectsSection = document.getElementById('projects');
       
       const scrollPosition = window.scrollY + windowHeight * 0.6; 
       
       if (homeSection && scrollPosition < aboutSection.offsetTop) {
         setActiveSection('home');
-      } else if (aboutSection && scrollPosition >= aboutSection.offsetTop && scrollPosition < projectsSection.offsetTop) {
+      } else if (aboutSection && scrollPosition >= aboutSection.offsetTop && scrollPosition < experienceSection.offsetTop) {
         setActiveSection('about');
+      } else if (experienceSection && scrollPosition >= experienceSection.offsetTop && scrollPosition < projectsSection.offsetTop) {
+        setActiveSection('experience');
       } else if (projectsSection && scrollPosition >= projectsSection.offsetTop) {
         setActiveSection('projects');
       }
@@ -48,6 +51,7 @@ function Header() {
       const offsets = {
         'home': 0,
         'about': 0,
+        'experience': -75,
         'projects': -75 
       };
       
@@ -89,6 +93,16 @@ function Header() {
             sobre mim
           </a>
           <a
+            href="#experience"
+            className={`nav-link ${activeSection === 'experience' ? 'active' : ''}`}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('experience');
+            }}
+          >
+            experiência
+          </a>
+          <a
             href="#projects"
             className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`}
             onClick={(e) => {
@@ -101,7 +115,7 @@ function Header() {
         </nav>
         <nav className="nav-end">
           <a id="a1" 
-            href="https://github.com/lkaazz" 
+            href="https://github.com/Lkaazz" 
             target="_blank" 
             rel="noopener noreferrer"
             className="nav-link"
@@ -129,7 +143,7 @@ function Header() {
             cv
           </a>
           <a id="a4"
-            href="mailto:xlkz321@gmail.com" 
+            href="mailto:calu1004@hotmail.com" 
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link"

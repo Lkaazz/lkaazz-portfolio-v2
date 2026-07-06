@@ -3,6 +3,7 @@
   .home-container,
   .sobre-container,
   .projects-container,
+  .experience-container,
   .about-container,
   .about-flex-container {
     padding: 0 0px;
@@ -33,6 +34,27 @@
 
   .content .role {
     font-size: 20px;
+  }
+
+  .role-subtitle {
+    font-size: 18px;
+  }
+
+  .experience-title {
+    font-size: 40px;
+  }
+
+  .experience-role {
+    font-size: 24px;
+  }
+
+  .experience-company {
+    font-size: 18px;
+  }
+
+  .experience-period,
+  .experience-highlights li {
+    font-size: 16px;
   }
 
   .profile-pic-container {
@@ -277,7 +299,8 @@
     font-size: 14px;
   }
 
-  .projects-title {
+  .projects-title,
+  .experience-title {
     font-size: 40px;
   }
 

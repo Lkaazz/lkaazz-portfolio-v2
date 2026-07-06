@@ -23,28 +23,9 @@ function Home() {
         <p className="intro">eu sou</p>
         <h1 className="name">Lucas Carvalho</h1>
         <p className="role">
-          desenvolvedor <span className="highlight">Full-stack</span> focado no desenvolvimento web 👨🏽‍💻
+           👨🏽‍💻 desenvolvedor <span className="highlight">Backend</span> · Oracle BRM
         </p>
-        <pre className="papagaio">
-{`
-                           .
-                          | \\/|
-  (\\   _                  ) )|/|
-      (/            _----. /.'.'
-.-._________..      .' @ _\\  .'   
-'.._______.   '.   /    (_| .')
-  '._____.  /   '-/      | _.'
-   '.______ (         ) ) \\
-     '..____ '._       )  )
-        .' __.--\\  , ,  // ((
-        '.'     |  \\/   (_.'(
-                '   \\ .'
-                 \\   (
-                  \\   '.
-                   \\ \\ '.)
-                    '-'-'
-`}
-        </pre>
+        <p className="role-subtitle">Accenture Brasil</p>
         <button 
           className="scroll-button"
           onClick={scrollToAbout}

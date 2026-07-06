@@ -47,32 +47,32 @@ function projectsReducer(state, action) {
 
 const projects = [
   {
-    title: 'Visão computacional e robótica',
-    description: 'Robô autônomo. Treinamento realizado com Yolo V8 e Python para desenvolver seu algoritmo de comportamento utilizando Asus Tinkboard.',
-    technologies: ['Python', 'Linux', 'YoloV8', 'AsusTinkerboard'],
+    title: 'CMB — Gestão de feedbacks',
+    description: 'Sistema backend para armazenar feedbacks de passageiros de ônibus e gerenciar dados para apresentação gráfica da situação do transporte público.',
+    technologies: ['Java', 'JavaFX', 'MySQL', 'My Maps API', 'UML'],
+    imageKey: 'cmb',
+    githubLink: 'https://github.com/Lkaazz/cmb',
+  },
+  {
+    title: 'Robótica e visão computacional (TCC)',
+    description: 'Robô autônomo com mobilidade automatizada por aprendizado de máquina e visão computacional, utilizando Yolo V8 e Asus Tinkboard.',
+    technologies: ['Python', 'YoloV8', 'Linux', 'Asus Tinkerboard', 'ML'],
     imageKey: 'robo',
-    githubLink: 'https://github.com/lkaazz/robotica-project',
+    githubLink: 'https://github.com/Lkaazz/robotics-computervision',
   },
   {
     title: 'Frufrutas',
-    description: 'Aplicação web focada em simular uma vendedora digital de frutas. Firebase utilizado para o armazenamento de dados das frutas',
+    description: 'Aplicação web focada em simular uma vendedora digital de frutas. Firebase utilizado para o armazenamento de dados das frutas.',
     technologies: ['ReactJS', 'Node.js', 'Firebase', 'Express'],
     imageKey: 'frufrutas',
-    githubLink: 'https://github.com/lkaazz/frufrutas',
-  },
-  {
-    title: 'CMB',
-    description: 'O projeto armazena feedbacks enviados por passageiros de ônibus e faz uma gestão de dados para apresentar ao cliente, de forma gráfica, a situação atual do transporte público.',
-    technologies: ['Java', 'JavaFX', 'MySQL', 'My Maps API', 'UML'],
-    imageKey: 'cmb',
-    githubLink: 'https://github.com/lkaazz/cmb',
+    githubLink: 'https://github.com/Lkaazz/frufrutas',
   },
   {
     title: 'Meu portfólio',
-    description: 'Projeto desenvolvido com react. Portfolio com objetivo de destacar minhas habilidades com desenvolvimento web.',
-    technologies: ['React', 'JavaScrip', 'NPM', 'CSS'],
+    description: 'Site pessoal desenvolvido com React para apresentar minha trajetória e habilidades técnicas.',
+    technologies: ['React', 'JavaScript', 'CSS'],
     imageKey: 'portfolio', 
-    githubLink: 'https://github.com/lkaazz/lkaazz-portfolio',
+    githubLink: 'https://github.com/Lkaazz/lkaazz-portfolio',
   }
 ];
 

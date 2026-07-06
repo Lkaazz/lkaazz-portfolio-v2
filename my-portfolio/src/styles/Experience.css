@@ -1,0 +1,78 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 80px 20px;
+}
+
+.experience-title {
+  color: #00B150;
+  font-size: 76px;
+  margin-bottom: 40px;
+  font-weight: normal;
+  text-align: center;
+  width: 100%;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  border-left: 4px solid #00B150;
+  padding-left: 30px;
+}
+
+.experience-header {
+  margin-bottom: 20px;
+}
+
+.experience-role {
+  color: #00B150;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.experience-company {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.experience-period {
+  font-size: 20px;
+  color: #89898A;
+}
+
+.experience-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience-highlights li {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #89898A;
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience-highlights li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #00B150;
+}
